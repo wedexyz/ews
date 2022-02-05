@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="shortcut icon" href="2.png" type="image/x-icon">
+
+
+</head>
+<audio id="myAudio1"><source src="wiwiw.wav" type="audio/ogg" ></audio>
+<audio id="myAudio2"><source src="kuning.wav" type="audio/ogg" ></audio>
+<audio id="myAudio3"><source src="ijo.wav" type="audio/ogg" ></audio>
+
+
+<body style="font-family:Verdana;color:#6e6a6a;background-color:#ffffff;"onload="on(),pauseAudio(),pauseAudio1(),pauseAudio2()">
+    <div id="overlay" onclick="off()"style="overflow:auto ;padding: 50px;" >
+        <div id="text">
+       
+          <div style="padding:15px;text-align:center;">
+            <img src="1.png" style="width:150px;height:150px;" align="left">
+            <img src="2.png" style="width:150px;height:150px;" align="left">
+            <img src="3.png" style="width:190px;height:150px;" align="right">
+            <img src="4.png" style="width:150px;height:150px;" align="right">
+    
+    
+            <h2 align="center">Early Warning System</h2>
+            <h2 align="center">Program Studi D3 Teknik Elektronika</h2>
+            <h2 align="center">Universitas Jember</h2>   
+            <button class="button button1" type="button" style="font-size: 20px;" onclick = pauseAudio(),pauseAudio1(),pauseAudio2()>klik untuk memulai</button>
+        </div>
+        </div>
+        <div class="right2">
+            <div id="kompas"></div>
+        </div>
+         
+        <div class="right2">
+    
+            <div id="jam"></div>
+        </div>
+        
+    
+    </div>
+
+
+<div style="overflow:auto ;padding-top: 50px;" >
+    <div class="right">
+        <b>Arah Jember</b><br/>
+        <div id="chartdiv"></div>
+    </div>
+
+  <div class="main">
+    <!--
+    lampu uwew
+-->
+<div class="light-container">
+    <div  class="lights">
+      <div class="light red"></div>
+      <div class="light yellow"></div>
+      <div class="light green"></div>
+    </div>
+  </div>
+<div style="display: none;">
+  <button class="change-light stop" onclick = playAudio(),pauseAudio1(),pauseAudio2()>Stop</button>
+  <button class="change-light slow"onclick = playAudio1(),pauseAudio(),pauseAudio2()>Slow</button>
+  <button class="change-light go"onclick = playAudio2(),pauseAudio(),pauseAudio1()>Go</button>
+</div>
+
+  </div>
+
+  <div class="right">
+    <b>Arah Banyuwangi</b><br/>
+    <div id="chartdiv1"></div>
+  </div>
+
+
+
+</div>
+
+<div style="background-color:#fbfbf8;text-align:center;padding:10px;margin-top:7px;">© copyright unej.com</div>
+<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/radar.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+<script src="sound.js"></script>
+<script src="core.js"></script>
+<script src="chartzz.js"></script>
+<script src="anim.js"></script>
+<script src="fire.js"></script>
+<script src="jquer.min.js"></script>
+<script src="overlay.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
